@@ -31,6 +31,8 @@ ao process remix web app with <b>Vitesse</b><br>
 - [] SlideOver in detail page to switch to different process
 - [] List/Send command in terminal page
 - [] Auto load new message while new message arrived in process
+- [] Add video demo
+- [] Deploy on vercel to have demo url
 
 ## Features
 
