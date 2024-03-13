@@ -47,5 +47,9 @@
     "json",
     "jsonc",
     "yaml"
-  ]
+  ],
+  "Lua.workspace.library": [
+    "/Users/stark/Library/Application Support/Code/User/globalStorage/sumneko.lua/addonManager/addons/ao/module/library"
+  ],
+  "Lua.workspace.checkThirdParty": false
 }
