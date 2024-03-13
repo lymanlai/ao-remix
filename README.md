@@ -1,9 +1,9 @@
 <p align='center'>
-  <img src='./public/pwa-192x192.png' alt='ao-remix - Opinionated Vite Starter Template' width='600'/>
+  <img src='./public/pwa-192x192.png' alt='ao-remix - Opinionated Vite Starter Template' width='300'/>
 </p>
 
 <p align='center'>
-Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
+ao process remix web app with <b>Vitesse</b><br>
 </p>
 
 <br>
@@ -20,10 +20,17 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 <p align='center'>
 <b>English</b> | <a href="https://github.com/antfu/vitesse/blob/main/README.zh-CN.md">简体中文</a>
-<!-- Contributors: Thanks for getting interested, however we DON'T accept new translations to the README, thanks. -->
 </p>
 
 <br>
+
+## TODO
+
+- [] Home Page to input new process id
+- [] Terminal like page for each process id
+- [] SlideOver in detail page to switch to different process
+- [] List/Send command in terminal page
+- [] Auto load new message while new message arrived in process
 
 ## Features
 
