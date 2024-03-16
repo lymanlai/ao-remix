@@ -7,7 +7,7 @@ import { message as aoSendMessage, createDataItemSigner, result } from '@permawe
 export const useAoStore = defineStore('ao', () => {
   const aoCache = $(useStorage('ao', { }))
 
-  async function doAdd(pid) {
+  async function doAdd(pid: string) {
     if (aoCache[pid])
       return false
 
