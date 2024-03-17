@@ -29,5 +29,9 @@ async function toggleLocales() {
     <RouterLink v-if="false" icon-btn to="/about" :title="t('button.about')" data-test-id="about">
       <div i-carbon-dicom-overlay />
     </RouterLink>
-</nav>
+
+    <a icon-btn rel="noreferrer" href="https://discord.gg/bZGMxJ3Y" target="_blank" title="AO Remix Discord">
+      <div i-carbon-logo-discord />
+    </a>
+  </nav>
 </template>
