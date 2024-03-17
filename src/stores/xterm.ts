@@ -1,13 +1,17 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import { useElementSize, useStorage } from '@vueuse/core'
 import { createDataItemSigner, results } from '@permaweb/aoconnect'
-import { Terminal } from '@xterm/xterm'
+
+// import { Terminal } from '@xterm/xterm'
+import * as pkg from '@xterm/xterm'
 import '@xterm/xterm/css/xterm.css'
 import { FitAddon } from '@xterm/addon-fit'
 import { CanvasAddon } from '@xterm/addon-canvas'
 import { SearchAddon } from '@xterm/addon-search'
 import { WebLinksAddon } from '@xterm/addon-web-links'
 import xtermTheme from 'xterm-theme'
+
+const { Terminal } = pkg
 
 export const useXtermStore = defineStore('xterm', () => {
   const route = useRoute('/p/[pid]')

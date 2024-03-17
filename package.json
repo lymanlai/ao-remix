@@ -4,7 +4,8 @@
   "packageManager": "pnpm@8.15.4",
   "scripts": {
     "ao": "cd aos && aos lyman-ao-remix --wallet ../wallet.json --load ./Prompt.lua",
-    "build": "vite-ssg build",
+    "build-ssg": "vite-ssg build",
+    "build": "vite build",
     "dev": "vite --port 3333 --open",
     "lint": "eslint .",
     "preview": "vite preview",
