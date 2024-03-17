@@ -9,6 +9,6 @@ const { wrapRef, terminalRef } = $(useXtermStore())
 
 <template>
   <div ref="wrapRef" class="h-screen w-screen">
-    <div id="terminal" ref="terminalRef" class="h-screen w-screen" />
+    <div id="terminal" ref="terminalRef" class="h-full w-full" />
   </div>
 </template>

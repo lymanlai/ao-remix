@@ -49,6 +49,7 @@ export const useXtermStore = defineStore('xterm', () => {
       xtermThemeIndex = 0
 
     term.options.theme = currentTheme
+    console.log(`====> currentTheme :`, currentTheme)
   }
   const fitAddon = new FitAddon()
   term.loadAddon(fitAddon)
@@ -64,10 +65,10 @@ export const useXtermStore = defineStore('xterm', () => {
     term.open(terminalRef)
     fitAddon.fit()
 
-    term.writeln('Welcome to \x1B[1;3;31mxterm.js\x1B[0m')
-    term.writeln('This is a local terminal emulation, without a real terminal in the back-end.')
+    term.writeln('Welcome to \x1B[1;3;31m AO Remix \x1B[0m')
+    term.writeln('This is a AO Process terminal emulation, without a real terminal in the back-end.')
+    term.writeln('It allow any user to see what is happening inside the ao computer easily, without even installing aos locally.')
     term.writeln('Type some keys and commands to play around.')
-    term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m $ ')
 
     term.onKey(async (e) => {
       const printable = !e.domEvent.altKey && !e.domEvent.altGraphKey && !e.domEvent.ctrlKey && !e.domEvent.metaKey
