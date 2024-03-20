@@ -81,7 +81,11 @@ export const useXtermStore = defineStore('xterm', () => {
           message = await sendMessage(process, userInput)
           userInput = ''
           term.write('\r\n')
-          term.writeln(await readMessage(message, process))
+          let rz = await readMessage(message, process)
+          if (rz.output)
+            rz = rz.output
+
+          term.writeln(rz)
           return
         case 'Backspace':
           term.write('\b \b')

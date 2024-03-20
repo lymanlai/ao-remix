@@ -6,6 +6,7 @@ import { message as aoSendMessage, createDataItemSigner, result } from '@permawe
 
 export const useAoStore = defineStore('ao', () => {
   const aoCache = $(useStorage('ao', { }))
+  const isEval = $(useStorage('isEval', false))
 
   async function doAdd(pid: string) {
     if (aoCache[pid])
@@ -29,9 +30,17 @@ export const useAoStore = defineStore('ao', () => {
 
   const sendMessage = async (process, data) => {
     await globalThis.arweaveWallet.connect(['SIGN_TRANSACTION'])
+    let tags = []
+    if (isEval) {
+      tags = [
+        { name: 'Action', value: 'Eval' },
+      ]
+    }
+
     const message = await aoSendMessage({
       process,
       signer: createDataItemSigner(globalThis.arweaveWallet),
+      tags,
       data,
       // tags: [
       //   {name: '', value: ''}
@@ -54,6 +63,7 @@ export const useAoStore = defineStore('ao', () => {
     sendMessage,
     readMessage,
     aoCache,
+    isEval,
   })
 })
 
