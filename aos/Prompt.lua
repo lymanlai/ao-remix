@@ -1,6 +1,6 @@
 --Example:
 function Prompt()
-  return "Lyman@aos[" .. #Inbox .. "] > "
+  return "Lyman@aos[" .. #Inbox .. "] ($" .. CRED.balance .. ")> "
 end
 
 Handlers.add(

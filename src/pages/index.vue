@@ -5,7 +5,7 @@ defineOptions({
 
 const router = useRouter()
 const { doAdd } = $(useAoStore())
-let pid = $ref('hiAi3Ka_Xms2KH5xfWV4uG4AZiQ_VxxbW-_PAhRt3xs')
+let pid = $ref('7imvXn3_kPceceEI18LprvuFZiwkVbCEbRljT-yBtO8')
 async function go() {
   if (!pid)
     return
@@ -14,7 +14,6 @@ async function go() {
   router.push(`/p/${encodeURIComponent(pid)}`)
   pid = ''
 }
-
 const { t } = useI18n()
 </script>
 
