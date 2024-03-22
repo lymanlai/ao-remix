@@ -83,6 +83,7 @@ Handlers.add(
   end
 )
 
+
 -- Handler to automate payment confirmation when waiting period starts.
 Handlers.add(
   "AutoPay",
@@ -146,3 +147,10 @@ Handlers.add(
     end
   end
 )
+
+
+-- LatestGameState['Players']['7imvXn3_kPceceEI18LprvuFZiwkVbCEbRljT-yBtO8']
+
+Game = "0rVZYFxvfJpO__EfOz0_PUQ3GFE9kEaES0GkUDNXjvE"
+Send({ Target = ao.id, Action = 'Tick' })
+Send({ Target = ao.id, Action = 'AutoPay' })
